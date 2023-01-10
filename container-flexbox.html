@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Container Flexbox</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .login{
+            display: flex;
+            flex-direction: column;
+            width: 25%;
+        }
+        .login input{
+            margin-top: 10px;
+            border: 1px solid purple;
+            border-radius: 5px;
+            padding: 4px 8px;
+        }
+
+        input[type=submit]{
+            background-color: blueviolet;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 5px;
+            font-weight: 700;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+
+        input[type=submit]:hover{
+            box-shadow: 3px 3px 5px cyan, 4px 4px yellow;
+        }
+
+        .center{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        h2{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <section class="center">
+        
+        <form action="" class="login">
+            <h2>Login to Continue Your Journey</h2>
+            <input type="email" name="email" id="" placeholder="email">
+            <input type="password" name="password" id="" placeholder="password">
+            <input type="submit" value="Login">
+        </form>
+    </section>
+
+   
+</body>
+</html>
